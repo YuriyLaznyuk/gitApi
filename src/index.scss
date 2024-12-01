@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.App {
+  display: flex;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 3px 5px;
+  background: linear-gradient(to right, #3fe8ab, #78cdcd);
+  color: #151515;
+  border-radius: 0.6rem;
+  border: 1px solid #151515;
+  &:hover {
+    transition: all 0.5s ease;
+    border-color: #3fe8ab;
+    background: transparent;
+    color: red;
+  }
+}
+.animated {
+  width: 30px;
+  height: 30px;
+  border: 3px dashed darkgreen;
+  border-radius: 50%;
+  animation: loader infinite 0.3s linear;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+  }
+  25% {
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+  }
+  75% {
+    transform: rotate(270deg);
+    width: 35px;
+    height: 35px;
+  }
+  100% {
+    transform: rotate(360deg);
+    width: 30px;
+    height: 30px;
+  }
+}

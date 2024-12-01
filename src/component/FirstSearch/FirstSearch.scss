@@ -1,0 +1,35 @@
+.FirstSearch {
+  margin: 10px auto;
+  text-align: center;
+  width: 45%;
+
+  @media (max-width: 800px) {
+    width: 98%;
+  }
+
+  &-search {
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+
+    img {
+      width: 50px;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 20px 0 20px;
+    }
+  }
+}
