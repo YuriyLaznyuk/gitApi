@@ -62,14 +62,13 @@ export default function FirstSearch(): React.JSX.Element {
       <div className="FirstSearch-user" key={user.id}>
         <img src={user.avatar_url} alt="user" />
         <div className="FirstSearch-user__btn">
-          <a
+          <span
             className="btn"
-            href="#"
             onClick={() => getUserRepo(user.login, user.id)}
           >
             {user.login}
-          </a>
-          {loading.id === user.id && <div className='animated'></div>}
+          </span>
+          {loading.id === user.id && <div className="animated"></div>}
           <a className="btn" href={user.html_url} target="_blank">
             Repo
           </a>

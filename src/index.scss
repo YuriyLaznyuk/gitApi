@@ -26,6 +26,7 @@ html {
   color: #151515;
   border-radius: 0.6rem;
   border: 1px solid #151515;
+  cursor: pointer;
   &:hover {
     transition: all 0.5s ease;
     border-color: #3fe8ab;
@@ -36,7 +37,8 @@ html {
 .animated {
   width: 30px;
   height: 30px;
-  border: 3px dashed darkgreen;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid green;
   border-radius: 50%;
   animation: loader infinite 0.3s linear;
 }
