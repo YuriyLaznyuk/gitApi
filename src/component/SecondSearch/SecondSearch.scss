@@ -26,6 +26,9 @@
 
   &-search {
     padding: 10px;
+    input {
+      font-size: 20px;
+    }
   }
   &-repo {
     display: flex;

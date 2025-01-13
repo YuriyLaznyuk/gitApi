@@ -10,6 +10,10 @@
   &-search {
     padding: 10px;
     border: 1px solid black;
+
+    input{
+      font-size: 20px;
+    }
   }
 
   &-user {
@@ -32,4 +36,5 @@
       margin: 0 20px 0 20px;
     }
   }
+  
 }

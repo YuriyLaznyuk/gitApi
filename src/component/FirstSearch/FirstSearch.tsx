@@ -56,7 +56,7 @@ export default function FirstSearch(): React.JSX.Element {
   //     return () => clearTimeout(delayInputValue);
   //   }, [value]);
 
-  const useValue = useDebounce(value, 2000);
+  const useValue:string = useDebounce(value, 2000);
   const showUsers = (arr: Array<any>): Array<ReactElement> =>
     arr.map((user: any) => (
       <div className="FirstSearch-user" key={user.id}>
